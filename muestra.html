@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Clases de parto, acompañamiento como doula y apoyo en posparto con María De Lourdes Pérez 'Lula' en Puerto Rico. Más de 30 años empoderando familias con nacimiento respetado." />
+<meta name="keywords" content="doula, educadora perinatal, nacimiento respetado, parto humanizado, Puerto Rico, Nova Baby, psicoprofilaxis, clases de parto, posparto, lactancia, Metanoia"/>
+<meta name="author" content="María De Lourdes Pérez 'Lula'">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://novababypr.com"/>
+<meta property="og:title" content="María De Lourdes Pérez 'Lula' - Doula & Educadora Perinatal en Puerto Rico"/>
+<meta property="og:description" content="Más de 30 años acompañando nacimientos con amor, respeto y conocimiento. Fundadora de Nova Baby."/>
+<meta property="og:image" content="https://novababypr.com/images/doula-lula.png"/>
+<meta property="og:url" content="https://novababypr.com"/>
+<meta property="og:type" content="website"/>
+<title>María De Lourdes Pérez "Lula" | Doula & Educadora Perinatal en Puerto Rico</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  @font-face {
+    font-family: 'BayerTypeArchiType';
+    src: url('fonts/BayerTypeArchiType.woff2') format('woff2'),
+         url('fonts/BayerTypeArchiType.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --primary: #a88c64;
+    --primary-dark: #7c6b4d;
+    --accent: #9fc4b8;
+    --bg: #f5f0eb;
+    --text: #333;
+    --text-light: #777;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+    padding-bottom: 100px;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 25px 0 50px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    position: relative;
+  }
+
+  .header-logo {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    object-fit: cover;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    line-height: 1.4;
+    color: white;
+  }
+
+  .header-subtitle {
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.8px;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    box-shadow: 0 5px 15px var(--accent);
+    transform: translateY(-3px);
+  }
+
+  /* Banda de bienvenida */
+  #welcome-band {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  max-height: 700px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'BayerTypeArchiType', sans-serif;
+  animation: waveReveal 2.5s ease forwards;
+}
+
+#welcome-band video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: videoFadeIn 2.5s forwards 0.5s;
+}
+
+@keyframes waveReveal {
+  0% {
+    clip-path: ellipse(0% 100% at 50% 100%);
+  }
+  50% {
+    clip-path: ellipse(120% 130% at 50% 100%);
+  }
+  100% {
+    clip-path: ellipse(100% 100% at 50% 50%);
+  }
+}
+
+@keyframes videoFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+  .welcome-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    animation: waveReveal 2s ease forwards;
+    clip-path: ellipse(0% 100% at 50% 100%);
+  }
+
+  .welcome-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes waveReveal {
+    0% { clip-path: ellipse(0% 100% at 50% 100%); }
+    60% { clip-path: ellipse(120% 130% at 50% 100%); }
+    100% { clip-path: ellipse(100% 100% at 50% 50%); }
+  }
+
+  .welcome-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 0 2rem;
+    text-align: center;
+    font-family: 'BayerTypeArchiType', sans-serif;
+  }
+  <div class="welcome-content">
+  <h1 class="welcome-title">Nova Baby PR</h1>
+  <p class="welcome-subtitle">Empoderando el nacimiento respetado con amor y conocimiento</p>
+  
+  <button class="jelly-button" aria-label="Explora">
+    <svg class="jelly-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" fill="currentColor" width="32" height="32">
+      <path d="M32 4c-9.39 0-16 7.6-16 16v24h6v8h4v-8h4v8h4v-8h6V20c0-8.4-6.61-16-16-16z"/>
+      <circle cx="24" cy="24" r="4" fill="#fff"/>
+      <circle cx="40" cy="24" r="4" fill="#fff"/>
+    </svg>
+    <span class="jelly-text">Explora</span>
+  </button>
+</div>
+
+
+  .welcome-title {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+  }
+
+  .welcome-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  }
+
+  #exploreBtn {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    background: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #exploreBtn:hover, #exploreBtn:focus {
+    background-color: white;
+    color: var(--primary-dark);
+    outline: none;
+  }
+
+  .arrow-icon {
+    font-size: 1.6rem;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+
+  main.container {
+    max-width: 900px;
+    margin: 3rem auto 6rem auto;
+    padding: 0 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+  }
+
+  /* Estilos para secciones de contenido */
+  section {
+    margin-bottom: 60px;
+  }
+  .about-me {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .about-me img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+  }
+/* Tarjetas más pequeñas para las secciones Recursos, Blogs, Metanoia */
+.projects-gallery, .blog-section-horizontal, .metanoia-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+  overflow-x: auto; /* para scroll si no caben */
+  padding-bottom: 20px;
+}
+
+.project-card, .blog-post, .project-card {
+  flex: 1 1 280px; /* ancho más pequeño */
+  max-width: 350px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img, .blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.project-card img:hover, .blog-post img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.project-card img:hover, .blog-post img:hover {
+  transform: scale(1.07);
+}
+
+/* Imagen psicoprofilaxis obstétrica PPO más pequeña y centrada */
+.philosophy img {
+  width: 100px; /* achicada */
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto 12px auto;
+  display: block;
+}
+
+contact-form {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #5a4a3f;
+  line-height: 1.6;
+}
+
+/* Botón WhatsApp con sombra */
+.btn-whatsapp:hover {
+      background: #075e54;
+      transform: translateY(-3px);
+    }
+    footer {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .social-links {
+      margin: 20px 0;
+    }
+    .social-links a {
+      font-size: 2.2rem;
+      margin: 0 20px;
+      color: white;
+      transition: transform 0.4s ease, color 0.4s ease;
+    }
+    .social-links a:hover {
+      transform: scale(1.4) rotate(10deg);
+      color: var(--accent);
+    }
+    .footer-info {
+      margin: 20px 0;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 1000;
+      transition: all 0.3s ease;
+      animation: pulse 1.5s infinite;
+      cursor: pointer;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1) rotate(10deg);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      header h1 {
+        font-size: 1.3rem;
+      }
+      .header-subtitle {
+        font-size: 0.85rem;
+      }
+      .jelly-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.jelly-icon {
+  transition: transform 0.3s ease;
+}
+
+.jelly-button:hover {
+  animation: jelly 0.6s;
+  transform: scale(1.1);
+}
+
+.jelly-button:hover .jelly-icon {
+  animation: jellyIcon 0.6s;
+}
+
+@keyframes jelly {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15, 0.85);
+  }
+  50% {
+    transform: scale(0.85, 1.15);
+  }
+  75% {
+    transform: scale(1.1, 0.9);
+  }
+}
+
+@keyframes jellyIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo-lula.png" alt="Logo Nova Baby" class="header-logo" />
+  <h1>María De Lourdes Pérez "Lula"</h1>
+  <p class="header-subtitle">Educadora Perinatal & Doula • Fundadora de Nova Baby • +30 años en Puerto Rico</p>
+  <nav>
+    <ul id="navMenu">
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#philosophy">Filosofía</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#metanoia">Metanoia</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="welcome-band">
+  <div class="welcome-background">
+    <video autoplay muted loop playsinline>
+      <source src="videos/jellyfish.mp4" type="video/mp4" />
+      Tu navegador no soporta videos en HTML5.
+    </video>
+    <div class="wave-overlay"></div>
+  </div>
+  <div class="welcome-content">
+    <h1 class="welcome-title"></h1>
+    <p class="welcome-subtitle"></p>
+    <button id="exploreBtn" class="btn-explora" aria-label="Explorar contenido">
+      Explora
+      <span class="arrow-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+<main class="container" id="mainContent">
+  <section id="about">
+    <h2>Sobre Mí</h2>
+    <div class="about-me">
+      <img src="images/fotoredonda-lula.png" alt="María De Lourdes Pérez 'Lula'" loading="lazy" />
+      <p>Hola, soy <strong>María De Lourdes Pérez "Lula"</strong>, me certifiqué como Educadora Perinatal - Instructora del Método Psicoprofilaxis al Parto hace más de 30 años por la Sociedad Puertorriqueña de Psicoprofilaxis Obstétrica (SPRIPO). Fundé <strong>Nova Baby</strong>, educación para la preparación al parto y la lactancia.</p>
+      <p>Mi misión es empoderar a cada embarazada para que viva su proceso con confianza, serenidad y plenitud. Creo profundamente en el poder del nacimiento respetado, consciente y amoroso.</p>
+    </div>
+  </section>
+  
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="projects-gallery">
+      <div class="project-card">
+        <a href="#contact" class="img-link">
+          <img src="images/clases-de-parto.png" alt="Clases de Parto Nova Baby" loading="lazy" />
+        </a>
+        <h3>Clases de Parto Nova Baby</h3>
+        <p>Preparación integral y emocionante durante la gestación, parto y postparto. Enfoque teórico, físico y psicoafectivo para una experiencia saludable y positiva.</p>
+        <a href="#contact" class="btn-blog">Solicitar información</a>
+      </div>
+      <div class="project-card">
+        <a href="#contact" class="img-link">
+          <img src="images/doula.png" alt="Acompañamiento como Doula" loading="lazy" />
+        </a>
+        <h3>Acompañamiento como Doula</h3>
+        <p>Presencia continua durante el trabajo de parto, ofreciendo apoyo físico, emocional e informativo. Entiendo el proceso del parto y el bienestar emocional de la madre.</p>
+        <a href="#contact" class="btn-blog">Solicitar información</a>
+      </div>
+      <div class="project-card">
+        <a href="#contact" class="img-link">
+          <img src="images/Lactancia-cuidados.png" alt="Apoyo en Posparto y Lactancia" loading="lazy" />
+        </a>
+        <h3>Apoyo en Posparto y Lactancia</h3>
+        <p>Visitas a domicilio para acompañar la transición a la nueva maternidad/paternidad, con técnicas de confort, alimentación y conexión madre-bebé.</p>
+        <a href="#contact" class="btn-blog">Solicitar información</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="philosophy">
+    <h2>Psicoprofilaxis Obstétrica (PPO)</h2>
+    <div class="philosophy">
+      <img src="images/lula-psicopro.png" alt="Psicoprofilaxis Obstétrica" loading="lazy" />
+      <h3>Preparación Integral para el Parto</h3>
+      <p>La preparación integral de la gestante es vital para el manejo físico, teórico y psicológico durante su embarazo, parto y post parto, logrando así un proceso de gestación sin temor y con menos complicaciones.</p>
+      <p><strong>¿Qué es la psicoprofilaxis?</strong> Es un proceso psicoterapéutico preventivo enfocado en la gestante, diseñado para promover su funcionamiento afectivo, cognitivo e interactivo. Brinda recursos para afrontar el embarazo, parto y posparto con herramientas de respiración, relajación, parto consciente y conexión con el recién nacido.</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blogs</h2>
+    <div class="blog-section-horizontal">
+      <div class="blog-post">
+        <img src="images/Nacimiento-respetado.png" alt="El poder del nacimiento respetado" loading="lazy" />
+        <h3>El poder del nacimiento respetado</h3>
+        <p>¡Tú eres el punto central! Profundizar en los sentimientos de la mujer embarazada cuando vive el miedo, inseguridad y silencia su voz es clave para entender por qué el nacimiento respetado no es solo un tema físico o médico, sino profundamente emocional y psicológico.</p>
+        <a href="blog-nacimiento-respetado.html" target="_blank" class="btn-blog">➡️ Leer artículo completo</a>
+      </div>
+      <div class="blog-post">
+        <img src="images/Parto-Repaso.png" alt="Consejos para primeras mamás" loading="lazy" />
+        <h3>Consejos para mamás primerizas</h3>
+        <p>Después de más de 30 años acompañando nacimientos, he aprendido que ser buena madre no es ser perfecta, sino estar presente, aunque tiembles.</p>
+        <a href="blog-consejos-primerizas.html" target="_blank" class="btn-blog">➡️ Leer consejos prácticos</a>
+      </div>
+      <div class="blog-post">
+        <img src="images/lula-la-doula.png" alt="Mi historia como doula en Puerto Rico" loading="lazy" />
+        <h3>Mi historia como Doula en Puerto Rico</h3>
+        <p>Todo comenzó cuando me preparaba para mi primer parto y descubrí las clases de Preparación al Parto Psicoprofiláctico, también conocido como el “parto sin dolor”.</p>
+        <a href="blog-historia-doula.html" target="_blank" class="btn-blog">➡️ Leer mi historia completa</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="metanoia">
+    <h2>Metanoia: Transformación del Corazón</h2>
+    <div class="philosophy">
+      <p><em>"Metanoia" proviene del griego y significa un cambio profundo de mente, corazón y alma. Es un giro interior, una transformación que nos lleva a ver la vida, la maternidad y el nacimiento desde una nueva conciencia.</em></p>
+      <p>En este espacio comparto reflexiones, enseñanzas y mensajes para acompañarte en tu transformación hacia una maternidad consciente, amorosa y respetada. Cada episodio combina bases científicas, historias profundas y cambios progresivos que nos representan como seres humanos en crecimiento.</p>
+    </div>
+    <div class="metanoia-section">
+      <div class="project-card">
+        <img src="images/Metanoia-Caso-Jamie-Ogg.png" alt="Metanoia 1: El poderoso del vínculo madre-hijo" loading="lazy" />
+        <h3>Metanoia 1: El poderoso del vínculo madre-hijo</h3>
+        <p>Cómo decir "sí" al nacimiento, al cuerpo y a la intuición transforma vidas. Inspirado en el caso de Jamie Ogg (2010), un recordatorio de que el amor y el contacto piel con piel pueden sanar incluso en los momentos más difíciles.</p>
+        <a href="https://www.canva.com/design/DAGuewhKCJ4/87AwjshX30atrPklQdLayQ/view" target="_blank" class="btn-blog">📘 Leer reflexión completa</a>
+      </div>
+      <div class="project-card">
+        <img src="images/Metanoia-documental-babies.png" alt="Metanoia 2: El documental Babies (2010)" loading="lazy" />
+        <h3>Metanoia 2: El documental "Babies" (2010)</h3>
+        <p>"Babies", de Thomas Balmès, nos recuerda que, más allá de las diferencias culturales y tecnológicas, la esencia de la vida humana y la maravilla de crecer son experiencias universales que nos unen como humanidad.</p>
+        <a href="https://www.canva.com/design/DAGrCeerxJ8/7FVSXaXdZ6enH7ptdXrDqA/watch" target="_blank" class="btn-blog">▶️ Ver la reflexión completa</a>
+      </div>
+      <div class="project-card">
+        <img src="images/Tecnica-de-Alexander.png" alt="Metanoia 3: La técnica de Alexander" loading="lazy" />
+        <h3>Metanoia 3: La técnica de Alexander</h3>
+        <p>Un método de reeducación psicofísica que ayuda a liberar tensiones y mejorar la postura. Aplicado al embarazo y parto —como en "Eutokia"—, promueve un nacimiento más consciente y alineado con el cuerpo.</p>
+        <a href="https://www.canva.com/design/DAGtAzg7j1Y/VQUJihKlSZpszrKp852X0g/watch" target="_blank" class="btn-blog">📘 Leer reflexión completa</a>
+      </div>
+    </div>
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="https://instagram.com/novababypr" target="_blank" class="btn-blog" style="background: #E1306C; padding: 12px 28px; display: inline-flex; align-items: center; gap: 10px;">
+        <i class="fab fa-instagram"></i> Ver más Metanoia en Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- Descarga -->
+    <section id="Descarga">
+      <h2>Recursos</h2>
+      <div class="blog-section-horizontal">
+        <div class="blog-post">
+          <img src="images/Essential-Oil.png" alt="Regalo: Aromaterapia en el Embarazo" loading="lazy" />
+          <h3>🎁 Regalo Especial: Aromaterapia en el Embarazo</h3>
+          <p>La aromaterapia puede ayudar a aliviar tensiones y molestias del embarazo, facilitando un parto más calmado y mejorando el bienestar de la madre.</p>
+          <a href="https://www.canva.com/design/DAGq6aaoLIQ/iBwtp94XZQHMrGk-lC10OQ/view" target="_blank" class="btn-blog">📥 Descargar tu regalo</a>
+        </div>
+      </div>
+    </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <!-- En tu sección contacto -->
+<div class="contact-form">
+  <p style="font-style: italic; color: #5a4a3f; margin-bottom: 25px;">
+    ¿Tienes preguntas o deseas programar una consulta? Escríbeme y con gusto te atenderé.
+  </p>
+  <a href="https://wa.me/17876053565?text=Hola%20Lula,%20quiero%20saber%20más" target="_blank" class="btn-whatsapp" aria-label="Escribir WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    Contactar por WhatsApp
+  </a>
+  <p style="margin-top: 15px; font-size: 0.9rem; color: #777;">
+    Te responderé lo antes posible. Tu mensaje se abrirá en WhatsApp.
+  </p>
+</div>
+
+  </section>
+
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // --- 1. MENÚ MÓVIL ---
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      }
+
+      // --- 2. ANIMACIONES AL HACER SCROLL ---
+      const sections = document.querySelectorAll('section');
+      const checkVisibility = () => {
+        sections.forEach(section => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top < window.innerHeight * 0.8) {
+            section.classList.add('visible');
+          }
+        });
+      };
+      window.addEventListener('scroll', checkVisibility);
+      checkVisibility();
+
+      // --- 3. DESPLAZAMIENTO SUAVE ---
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href');
+          if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+              if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+              }
+            }
+          }
+        });
+      });
+    });
+  </script>
+ <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/novababypr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/17876053565" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2025 María De Lourdes Pérez "Lula" - Todos los derechos reservados</p>
+      <p>Empoderando familias en Puerto Rico desde hace más de 30 años</p>
+    </div>
+  
+
+</body>
+</html>
+
